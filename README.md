@@ -6,7 +6,7 @@ Aplicativo Android desenvolvido em Java para informar sobre o Título de Eleitor
 Aplicativo Android desenvolvido em Java com o objetivo de informar sobre o Título de Eleitor no Brasil.
 
 ## 👥 Integrantes
-- Fernando Benevidez
+- Fernando Benevides
 - João Pedro
 - Rafael Bento Tieghi Sampaio
 

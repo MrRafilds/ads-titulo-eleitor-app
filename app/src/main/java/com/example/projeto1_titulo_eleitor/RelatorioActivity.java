@@ -1,6 +1,8 @@
 package com.example.projeto1_titulo_eleitor;
 
 import android.os.Bundle;
+import android.widget.EditText;
+import android.widget.TextView;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -14,7 +16,7 @@ import java.time.format.DateTimeFormatter;
 
 public class RelatorioActivity extends AppCompatActivity {
 
-//    private String texto;
+    private TextView texto;
 
 
     @Override
@@ -48,6 +50,14 @@ public class RelatorioActivity extends AppCompatActivity {
         } else {
             situacao = "Voto opcional";
         }
+
+        String resultado = nome + " " + idade + " " + situacao;
+
+        texto = findViewById(R.id.dados);
+        texto.setText(resultado);
+
+//        texto = nome + data + situacao;
+
 
 
 
