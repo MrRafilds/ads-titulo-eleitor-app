@@ -6,8 +6,8 @@ Aplicativo Android desenvolvido em Java para informar sobre o Título de Eleitor
 Aplicativo Android desenvolvido em Java com o objetivo de informar sobre o Título de Eleitor no Brasil.
 
 ## 👥 Integrantes
-- Fernando Benevides
-- João Pedro
+- Fernando Vizoni Pereira Benevides
+- João Pedro Dias de Faria
 - Rafael Bento Tieghi Sampaio
 
 ## 🎓 Informações Acadêmicas
