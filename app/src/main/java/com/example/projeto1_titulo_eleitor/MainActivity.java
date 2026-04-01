@@ -43,8 +43,8 @@ public class MainActivity extends AppCompatActivity {
 
         btnContinuar.setOnClickListener(v -> {
 
-            String txtNome = nome.getText().toString();
-            String txtData = data.getText().toString();
+            String txtNome = nome.getText().toString().trim();
+            String txtData = data.getText().toString().trim();
 
             if (camposEstaoCorretos(txtNome, txtData)) {
                 Intent intent = new Intent(MainActivity.this, RelatorioActivity.class);
@@ -107,35 +107,31 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private boolean camposEstaoCorretos(String nome, String data) {
+        //verifica se os campos estão vazios
+        if (nome.isEmpty() || data.isEmpty()) { return false; }
+
         int anoAtual = LocalDate.now().getYear();
 
         String[] partes = data.split("/");
+        
+        if (partes.length > 3) { return false; }
+
         int dia = Integer.parseInt(partes[0]);
         int mes = Integer.parseInt(partes[1]);
         int ano = Integer.parseInt(partes[2]);
 
         int[] mesesCom30 = {4, 6, 9,11};
 
-        //verifica se os campos estão vazios
-        if (nome.isEmpty() || data.isEmpty()) {
-            return false;
-        }
-
         // verifica datas impossíveis
         if (dia < 1 || dia > 31 ||
                 mes < 1 || mes > 12 ||
-                ano > anoAtual || ano < (anoAtual - 110)) {
-            return false;
-        }
+                ano > anoAtual || ano < (anoAtual - 110))
+        {return false;}
 
         // meses com 30 dias não podem ter dia 31
-        if (Arrays.binarySearch(mesesCom30, mes) > -1 && dia > 30) {
-            return false;
-        }
+        if (Arrays.binarySearch(mesesCom30, mes) > -1 && dia > 30) {return false;}
 
-        if (mes == 2 || dia > 29) {
-            return false;
-        }
+        if (mes == 2 && dia > 29) {return false;}
 
         return true;
     }
