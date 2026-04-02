@@ -1,6 +1,8 @@
 package com.example.projeto1_titulo_eleitor;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
@@ -17,7 +19,7 @@ import java.time.format.DateTimeFormatter;
 public class RelatorioActivity extends AppCompatActivity {
 
     private TextView texto;
-
+    private Button btnCompartilhar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -51,10 +53,23 @@ public class RelatorioActivity extends AppCompatActivity {
             situacao = "Voto opcional";
         }
 
-        String resultado = nome + " " + idade + " " + situacao;
+        String resultado = nome + " " + idade + "anos" + " " + situacao;
 
         texto = findViewById(R.id.dados);
         texto.setText(resultado);
+        btnCompartilhar = findViewById(R.id.btnCompartilhar);
+        btnCompartilhar.setOnClickListener(v -> {
+            Intent intent = new Intent();
+            intent.setAction(Intent.ACTION_SEND);
+            intent.putExtra(Intent.EXTRA_TEXT,resultado);
+            intent.setType("text/plain");
+
+            startActivity(Intent.createChooser(intent, "compartilhar"));
+
+        });
+
+
+
 
 //        texto = nome + data + situacao;
 
