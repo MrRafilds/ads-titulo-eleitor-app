@@ -53,7 +53,7 @@ public class RelatorioActivity extends AppCompatActivity {
             situacao = "Voto opcional";
         }
 
-        String resultado = nome + " " + idade + "anos" + " " + situacao;
+        String resultado = "Nome: " + nome + "\n" + "Idade: " +idade + " anos\n" + "Situação: " + situacao;
 
         texto = findViewById(R.id.dados);
         texto.setText(resultado);
