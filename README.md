@@ -8,6 +8,7 @@ Aplicativo Android desenvolvido em Java com o objetivo de informar sobre o Títu
 ## 👥 Integrantes
 - Fernando Vizoni Pereira Benevides
 - João Pedro Dias de Faria
+- José Elias Muniz do Espirito Santo
 - Rafael Bento Tieghi Sampaio
 
 ## 🎓 Informações Acadêmicas
@@ -24,5 +25,6 @@ Aplicativo Android desenvolvido em Java com o objetivo de informar sobre o Títu
 - Orientações para emissão
 - Consulta de dados básicos
 
-## 🚀 Objetivo
-Facilitar o acesso à informação sobre o processo eleitoral brasileiro.,
+## 🚀 Projeto
+
+Projeto-1 desenvolvido em grupo como parte avaliativa da nota P1.
