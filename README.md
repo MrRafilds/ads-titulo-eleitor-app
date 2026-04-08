@@ -11,6 +11,9 @@ Aplicativo Android desenvolvido em Java com o objetivo de informar sobre o Títu
 - José Elias Muniz do Espirito Santo
 - Rafael Bento Tieghi Sampaio
 
+## 🤝 Colaboradores
+* José Elias Muniz do Espirito Santo
+
 ## 🎓 Informações Acadêmicas
 - Faculdade: Fatec Botucatu
 - Curso: Análise e Desenvolvimento de Sistemas
