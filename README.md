@@ -8,7 +8,6 @@ Aplicativo Android desenvolvido em Java com o objetivo de informar sobre o Títu
 ## 👥 Integrantes
 - Fernando Vizoni Pereira Benevides
 - João Pedro Dias de Faria
-- José Elias Muniz do Espirito Santo
 - Rafael Bento Tieghi Sampaio
 
 ## 🤝 Colaboradores
